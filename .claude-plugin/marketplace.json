@@ -1,5 +1,5 @@
 {
-  "name": "cegape-stack-audit",
+  "name": "cegape-audit-stack",
   "owner": {
     "name": "Karim Cassam Chenaï",
     "email": "karim.cassam@cegape.fr"
@@ -10,11 +10,11 @@
   },
   "plugins": [
     {
-      "name": "stack-audit",
-      "description": "Détecte et documente la stack technique d'un projet à partir de ses manifestes et fichiers de configuration : langages, frameworks back/front, build & dépendances, persistance, packaging (WAR/JAR), JVM (OpenJDK/OracleJDK), serveur d'application, conteneurisation/déploiement, tests. Générique et multi-langages (Java/Grails/Spring, Node/Angular/Vue, Python, PHP…).",
+      "name": "audit-stack",
+      "description": "Détecte et documente la stack technique d'un projet à partir de ses manifestes et fichiers de configuration : langages, frameworks back/front, build & dépendances, persistance, packaging (WAR/JAR), JVM (OpenJDK/OracleJDK), serveur d'application, conteneurisation/déploiement, tests. Générique et multi-langages (Java/Grails/Spring, Node/Angular/Vue, Python, PHP…). Add-on de l'orchestrateur audit-orchestrator.",
       "source": "./",
       "strict": false,
-      "skills": ["./skills/stack-audit"]
+      "skills": ["./skills/audit-stack"]
     }
   ]
 }

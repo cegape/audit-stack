@@ -1,8 +1,8 @@
-# stack-audit — audit de la stack technique (kit générique)
+# audit-stack — audit de la stack technique (kit générique)
 
 Kit / plugin Claude (Code / Cowork) pour **détecter et documenter la stack technique** d'un projet à partir de son **code source** (manifestes et fichiers de configuration), sans exécution ni modification.
 
-Membre de la famille de kits d'audit CEGAPE, aux côtés de [`anssi-pg078-audit-kit`](https://github.com/cegape/anssi-pg078-audit-kit) (sécurité / authentification) et [`rgaa-audit-plugin`](https://github.com/cegape/rgaa-audit-plugin) (accessibilité). Générique : **aucune donnée interne** (produits, dépôts, secrets).
+Membre de la famille de kits d'audit CEGAPE, aux côtés de [`audit-anssi-pg078`](https://github.com/cegape/audit-anssi-pg078) (sécurité / authentification) et [`audit-rgaa`](https://github.com/cegape/audit-rgaa) (accessibilité). Orchestrés ensemble par [`audit-orchestrator`](https://github.com/cegape/audit-orchestrator). Générique : **aucune donnée interne**.
 
 ## Ce que produit le kit
 
@@ -18,8 +18,8 @@ Agnostique du langage : Java (Maven/Gradle, Spring/Grails/Struts), Node/TS (Angu
 ## Installation (Claude Code)
 
 ```bash
-/plugin marketplace add https://github.com/cegape/stack-audit-kit
-/plugin install stack-audit
+/plugin marketplace add https://github.com/cegape/audit-stack
+/plugin install audit-stack
 ```
 
 ## Utilisation
@@ -28,11 +28,9 @@ Agnostique du langage : Java (Maven/Gradle, Spring/Grails/Struts), Node/TS (Angu
 
 **Langage naturel** : « fais l'audit de la stack technique de `~/repo/monprojet` ».
 
-**CLI** (sans Claude) : les repères sont dans `skills/stack-audit/references/`, le gabarit dans `skills/stack-audit/templates/stack-fiche.md.tpl`.
+## Relation avec l'orchestrateur
 
-## Relation avec `audit-doc`
-
-Ce kit audite **un** projet. Pour lancer l'audit sur **plusieurs logiciels en une action** et **publier/mettre à jour** le résultat dans Confluence, on utilise l'orchestrateur `audit-doc` (repo interne `audit-doc-kit`), qui appelle la méthode de ce kit et connaît le mapping logiciel → dépôt → page.
+Ce kit audite **un** projet. Pour lancer l'audit sur **plusieurs logiciels en une action** et **publier/mettre à jour** le résultat dans Confluence, on utilise [`audit-orchestrator`](https://github.com/cegape/audit-orchestrator), qui appelle la méthode de ce kit et connaît le mapping logiciel → dépôt → page.
 
 ## Licence & mainteneur
 
