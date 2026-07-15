@@ -1,0 +1,20 @@
+{
+  "name": "cegape-stack-audit",
+  "owner": {
+    "name": "Karim Cassam Chenaï",
+    "email": "karim.cassam@cegape.fr"
+  },
+  "metadata": {
+    "description": "Marketplace CEGAPE — kit d'audit de la stack technique d'un projet (générique, multi-langages).",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "stack-audit",
+      "description": "Détecte et documente la stack technique d'un projet à partir de ses manifestes et fichiers de configuration : langages, frameworks back/front, build & dépendances, persistance, packaging (WAR/JAR), JVM (OpenJDK/OracleJDK), serveur d'application, conteneurisation/déploiement, tests. Générique et multi-langages (Java/Grails/Spring, Node/Angular/Vue, Python, PHP…).",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/stack-audit"]
+    }
+  ]
+}
